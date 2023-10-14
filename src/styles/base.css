@@ -1,0 +1,86 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  /* Colors */
+  --clr-white: #ffffff;
+  --clr-soft-gray: #757575;
+  --clr-gray: #565656;
+  --clr-black: #000000;
+
+  --clr-main-bg: #fefefe;
+
+  --clr-blue: #2639ed;
+  --clr-orange: #fff5db;
+
+  /* Media */
+
+  --min-width: 320px;
+  --max-width: 1200px;
+
+  /* Text */
+
+  --text-xs: 14px;
+  --text-s: 16px;
+  --text-m: 18px;
+  --text-l: 20px;
+  --text-xl: 24px;
+  --text-2xl: 27px;
+  --text-3xl: 40px;
+}
+
+@font-face {
+  font-family: 'Averta-Regular';
+  src: url('../assets/fonts/AvertaDemoPECuttedDemo-Regular.otf');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  min-width: var(--min-width);
+  background-color: var(--clr-main-bg);
+  font-family: 'Averta-Regular';
+  color: var(--clr-black);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:
+    minmax(15px, 1fr)
+    minmax(var(--min-width), var(--max-width))
+    minmax(15px, 1fr);
+}
+
+.grid-content {
+  grid-column: 2 / 3;
+}
+
+.grid-content-full {
+  grid-column: 1 / -1;
+}
