@@ -39,7 +39,6 @@ const navList = ref(['Home', 'What We Do', 'Service', 'Project', 'Blog', 'Contac
 
 .nav {
     font-size: var(--text-s);
-    font-weight: 600;
     letter-spacing: 0.16px;
 }
 
@@ -54,5 +53,26 @@ const navList = ref(['Home', 'What We Do', 'Service', 'Project', 'Blog', 'Contac
     }
 }
 
-.nav-item {}
+.nav-item {
+    position: relative;
+
+    & a {
+        font-weight: 600;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 100%;
+        width: 0;
+        height: 2px;
+        background-color: var(--clr-black);
+        transition: all 350ms ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+}
 </style>

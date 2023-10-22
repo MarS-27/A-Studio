@@ -1,12 +1,16 @@
 <script setup>
-import AppHeader from "./components/AppHeader.vue"
+import HeaderSection from "./components/HeaderSection.vue"
+import HowCanHelpSection from "./components/HowCanHelpSection.vue";
 import IntroSection from "./components/IntroSection.vue";
+import OurClientsSection from "./components/OurClientsSection.vue";
 </script>
 
 <template>
-  <AppHeader />
+  <HeaderSection />
   <main class="grid-container">
     <IntroSection />
+    <OurClientsSection />
+    <HowCanHelpSection />
   </main>
 </template>
 

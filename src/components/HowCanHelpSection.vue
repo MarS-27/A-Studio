@@ -1,0 +1,135 @@
+<script setup>
+</script>
+
+<template>
+    <section class="grid-content can-help">
+        <div class="can-help-info">
+            <h3 class="section-title">How can we help your Business ?</h3>
+            <p class="section-text">We build readymade websites, mobile applications, and elaborate online business
+                services.
+            </p>
+        </div>
+        <div class="can-help-cards">
+            <div class="card">
+                <div class="card-img box-search">
+                    <img src="../assets/images/box-search.svg" alt="box-search">
+                </div>
+                <div class="card-title">Financial Planning System</div>
+                <div class="card-text">Protocols apart from aengage models, pricing billing</div>
+            </div>
+            <div class="card">
+                <div class="card-img empty-wallet">
+                    <img src="../assets/images/empty-wallet.svg" alt="empty-wallet">
+                </div>
+                <div class="card-title">Business Idea Planning</div>
+                <div class="card-text">We present you a proposal and discuss niffty-gritty like</div>
+            </div>
+            <div class="card">
+                <div class="card-img code">
+                    <img src="../assets/images/code.svg" alt="code">
+                </div>
+                <div class="card-title">Development Website and App</div>
+                <div class="card-text">Communication protocols apart from engagement models</div>
+            </div>
+            <div class="card">
+                <div class="card-img chart-square">
+                    <img src="../assets/images/chart-square.svg" alt="chart-square">
+                </div>
+                <div class="card-title">Market Analysis Project</div>
+                <div class="card-text">Protocols apart from aengage models, pricing billing</div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+.can-help {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 94px;
+}
+
+.can-help-info {
+    max-width: 396px;
+
+    & .section-title {
+        margin-bottom: 30px;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: -1;
+            left: -39px;
+            top: -55px;
+            width: 178px;
+            height: 178px;
+            border-top-left-radius: 100px;
+            background-color: var(--clr-orange);
+        }
+    }
+}
+
+.can-help-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 308px;
+    border-radius: 40px;
+    border: 1px solid #F2F2F2;
+    background-color: var(--clr-white);
+    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.05);
+    padding: 39px 32px 57px 31px;
+
+    &:has(.box-search),
+    &:has(.code) {
+        transform: translateY(79px);
+    }
+}
+
+.card-img {
+    border-radius: 20px;
+    padding: 24px;
+    margin-bottom: 31px;
+}
+
+.box-search {
+    background-color: #F1F7FF;
+}
+
+.empty-wallet {
+    background-color: #FFF7E3;
+}
+
+.code {
+    background-color: #FFF2F8;
+}
+
+.chart-square {
+    background-color: #DEFFEE;
+}
+
+.card-title {
+    text-align: center;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+
+.card-text {
+    color: var(--clr-soft-gray);
+
+    text-align: center;
+    font-size: var(--text-s);
+    line-height: 140%;
+}
+</style>

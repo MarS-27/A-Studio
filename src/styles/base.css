@@ -48,6 +48,7 @@ body {
   background-color: var(--clr-main-bg);
   font-family: 'Averta-Regular';
   color: var(--clr-black);
+  overflow-x: hidden;
 }
 
 ol,
@@ -83,4 +84,15 @@ button {
 
 .grid-content-full {
   grid-column: 1 / -1;
+}
+
+.section-title {
+  font-size: var(--text-3xl);
+  font-weight: 900;
+}
+
+.section-text {
+  color: var(--clr-gray);
+  line-height: 160%;
+  font-size: var(--text-s);
 }
