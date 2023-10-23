@@ -8,6 +8,10 @@
             <p class="section-text">We build readymade websites, mobile applications, and elaborate online business
                 services.
             </p>
+            <div class="can-help-dots">
+                <img src="../assets/images/Dot.svg" alt="dots">
+                <img src="../assets/images/Dot.svg" alt="dots">
+            </div>
         </div>
         <div class="can-help-cards">
             <div class="card">
@@ -45,15 +49,29 @@
 <style scoped>
 .can-help {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    position: relative;
     gap: 10px;
     margin-top: 94px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 140px;
+        right: -120px;
+        z-index: -1;
+        width: 87.3%;
+        height: 635px;
+        background: #F4F9FF;
+        border-top-left-radius: 150px;
+    }
 }
 
 .can-help-info {
     max-width: 396px;
 
     & .section-title {
+        position: relative;
         margin-bottom: 30px;
 
         &::before {
@@ -71,11 +89,32 @@
     }
 }
 
+.can-help-dots {
+    display: flex;
+    gap: 12px;
+    z-index: -5;
+    margin-left: 5px;
+    margin-top: 104px;
+}
+
 .can-help-cards {
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     margin: 0 auto;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        right: -40px;
+        z-index: -5;
+        width: 120px;
+        height: 120px;
+        border: 8px solid var(--clr-pink);
+        border-radius: 100%;
+    }
 }
 
 .card {
@@ -127,7 +166,6 @@
 
 .card-text {
     color: var(--clr-soft-gray);
-
     text-align: center;
     font-size: var(--text-s);
     line-height: 140%;

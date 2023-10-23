@@ -3,6 +3,7 @@ import HeaderSection from "./components/HeaderSection.vue"
 import HowCanHelpSection from "./components/HowCanHelpSection.vue";
 import IntroSection from "./components/IntroSection.vue";
 import OurClientsSection from "./components/OurClientsSection.vue";
+import VideoGuideSection from "./components/VideoGuideSection.vue";
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import OurClientsSection from "./components/OurClientsSection.vue";
     <IntroSection />
     <OurClientsSection />
     <HowCanHelpSection />
+    <VideoGuideSection />
   </main>
 </template>
 
