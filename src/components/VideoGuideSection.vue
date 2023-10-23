@@ -5,7 +5,9 @@
     <section class="grid-content video-guide">
         <div class="video-guide-content">
             <video src="../assets/video/DigitalAgency.mp4"></video>
-            <button type="button" class="video-play-button"></button>
+            <button type="button" class="video-play-button">
+                <img src="../assets/icons/play-icon.svg" alt="play">
+            </button>
         </div>
         <div class="video-guide-info">
             <h3 class="section-title">Great Digital Product Agency since 2016 </h3>
@@ -55,6 +57,9 @@
 }
 
 .video-play-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 78px;
     height: 78px;
     background-color: var(--clr-blue);
