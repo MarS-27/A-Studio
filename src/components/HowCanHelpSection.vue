@@ -9,38 +9,38 @@
                 services.
             </p>
             <div class="can-help-dots">
-                <img src="../assets/images/Dot.svg" alt="dots">
-                <img src="../assets/images/Dot.svg" alt="dots">
+                <img src="/src/assets/images/Dot.svg" alt="dots">
+                <img src="/src/assets/images/Dot.svg" alt="dots">
             </div>
         </div>
         <div class="can-help-cards">
             <div class="card">
                 <div class="card-img box-search">
-                    <img src="../assets/images/box-search.svg" alt="box-search">
+                    <img src="/src/assets/images/box-search.svg" alt="box-search">
                 </div>
-                <div class="card-title">Financial Planning System</div>
-                <div class="card-text">Protocols apart from aengage models, pricing billing</div>
+                <p class="card-title">Financial Planning System</p>
+                <p class="card-text">Protocols apart from aengage models, pricing billing</p>
             </div>
             <div class="card">
                 <div class="card-img empty-wallet">
-                    <img src="../assets/images/empty-wallet.svg" alt="empty-wallet">
+                    <img src="/src/assets/images/empty-wallet.svg" alt="empty-wallet">
                 </div>
-                <div class="card-title">Business Idea Planning</div>
-                <div class="card-text">We present you a proposal and discuss niffty-gritty like</div>
+                <p class="card-title">Business Idea Planning</p>
+                <p class="card-text">We present you a proposal and discuss niffty-gritty like</p>
             </div>
             <div class="card">
                 <div class="card-img code">
-                    <img src="../assets/images/code.svg" alt="code">
+                    <img src="/src/assets/images/code.svg" alt="code">
                 </div>
-                <div class="card-title">Development Website and App</div>
-                <div class="card-text">Communication protocols apart from engagement models</div>
+                <p class="card-title">Development Website and App</p>
+                <p class="card-text">Communication protocols apart from engagement models</p>
             </div>
             <div class="card">
                 <div class="card-img chart-square">
-                    <img src="../assets/images/chart-square.svg" alt="chart-square">
+                    <img src="/src/assets/images/chart-square.svg" alt="chart-square">
                 </div>
-                <div class="card-title">Market Analysis Project</div>
-                <div class="card-text">Protocols apart from aengage models, pricing billing</div>
+                <p class="card-title">Market Analysis Project</p>
+                <p class="card-text">Protocols apart from aengage models, pricing billing</p>
             </div>
         </div>
     </section>

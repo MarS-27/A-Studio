@@ -8,10 +8,10 @@
             <p class="section-text">Several selected clients, who already believe in our service.</p>
         </div>
         <div class="clients-images">
-            <img src="../assets/images/google-logo.svg" alt="google">
-            <img src="../assets/images/airbnb-logo.svg" alt="airbnb">
-            <img src="../assets/images/uber-eats-logo.svg" alt="uber-eats">
-            <img src="../assets/images/amazon-logo.svg" alt="amazon">
+            <img src="/src/assets/images/google-logo.svg" alt="google">
+            <img src="/src/assets/images/airbnb-logo.svg" alt="airbnb">
+            <img src="/src/assets/images/uber-eats-logo.svg" alt="uber-eats">
+            <img src="/src/assets/images/amazon-logo.svg" alt="amazon">
         </div>
     </section>
 </template>

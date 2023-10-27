@@ -17,11 +17,11 @@
     font-family: "Averta-Regular";
     font-size: var(--text-l);
     letter-spacing: 1.3px;
+    transition: filter;
+    transition-duration: 300ms;
 
     &:hover {
         filter: drop-shadow(2px 4px 6px var(--clr-gray));
-        transition: filter;
-        transition-duration: 300ms;
     }
 }
 </style>
