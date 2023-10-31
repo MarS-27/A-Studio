@@ -64,14 +64,14 @@ const changeActiveFeedback = (commentId) => {
                 </template>
             </div>
             <div class="cliens-photos-circle">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <img class="photo_1" src="/src/assets/images/sara_stein.jpeg" alt="Sara Stein">
+                <img class="photo_2" src="/src/assets/images/emma_dunn.jpeg" alt="Emma Dunn">
+                <img class="photo_3" src="/src/assets/images/erica_best.jpeg" alt="Erica Best">
+                <img class="photo_4" src="/src/assets/images/elly_sun.jpeg" alt="Elly Sun">
+                <img class="photo_5" src="/src/assets/images/phil_sommers.jpeg" alt="Phil Sommers">
+                <img class="photo_6" src="/src/assets/images/sabrina_himenez.jpeg" alt="Sabrina Himenez">
+                <img class="photo_7" src="/src/assets/images/john_white.jpeg" alt="John White">
+                <img class="photo_8" src="/src/assets/images/sam_spring.jpeg" alt="Sam Spring">
             </div>
         </div>
 
@@ -93,13 +93,17 @@ const changeActiveFeedback = (commentId) => {
     }
 }
 
-.feedback-inner {}
+.feedback-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
 
 .feedback-list {}
 
 .feedback-item {
     display: flex;
-    gap: 20px;
+    gap: 67px;
     position: relative;
 
     & img {
@@ -120,6 +124,20 @@ const changeActiveFeedback = (commentId) => {
         height: 120px;
         border: 8px solid var(--clr-pink);
         border-radius: 100%;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 196px;
+        height: 154px;
+        top: -42px;
+        left: 230px;
+        z-index: -5;
+        background-image: url('/src/assets/images/Dot.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     &>div {
@@ -168,5 +186,92 @@ const changeActiveFeedback = (commentId) => {
             transform: scale(1);
         }
     }
+}
+
+.cliens-photos-circle {
+    position: relative;
+    max-width: 348px;
+    padding: 107px 40px 128px 124px;
+    align-self: flex-start;
+
+    & img {
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 184px;
+        height: 184px;
+        border-radius: 100%;
+        background-color: var(--clr-orange);
+        top: 107px;
+        left: 21px;
+        z-index: -1;
+    }
+}
+
+.photo_1 {
+    width: 120px;
+    height: 120px;
+
+}
+
+.photo_2,
+.photo_7 {
+    position: absolute;
+    width: 98px;
+    height: 98px;
+}
+
+.photo_3,
+.photo_6,
+.photo_8 {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+}
+
+.photo_4,
+.photo_5 {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+}
+
+.photo_2 {
+    left: 0;
+    top: 58px;
+}
+
+.photo_3 {
+    top: 0;
+    left: 137px;
+}
+
+.photo_4 {
+    top: 63px;
+    right: -19px;
+}
+
+.photo_5 {
+    top: 150px;
+    right: -64px;
+}
+
+.photo_6 {
+    bottom: 60px;
+    right: -8px;
+}
+
+.photo_7 {
+    bottom: 0;
+    left: 98px;
+}
+
+.photo_8 {
+    left: 0;
+    bottom: 84px;
 }
 </style>
