@@ -1,5 +1,8 @@
 <script setup>
 import MainButton from './MainButton.vue';
+import { ref } from "vue"
+
+const btnVariant = ref("medium");
 </script>
 
 <template>
@@ -10,7 +13,7 @@ import MainButton from './MainButton.vue';
                 websites, mobile
                 applications, and elaborate online business services.
             </p>
-            <MainButton />
+            <MainButton :variant="btnVariant" />
             <div class="intro-dots">
                 <img src="/src/assets/images/Dot.svg" alt="dots">
                 <img src="/src/assets/images/Dot.svg" alt="dots">

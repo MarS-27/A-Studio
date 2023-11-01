@@ -74,7 +74,6 @@ const changeActiveFeedback = (commentId) => {
                 <img class="photo_8" src="/src/assets/images/sam_spring.jpeg" alt="Sam Spring">
             </div>
         </div>
-
     </section>
 </template>
 

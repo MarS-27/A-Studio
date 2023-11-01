@@ -1,5 +1,7 @@
 <script setup>
 import ClientsFeedbackSection from "./components/ClientsFeedbackSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/FooterSection.vue";
 import HeaderSection from "./components/HeaderSection.vue"
 import HowCanHelpSection from "./components/HowCanHelpSection.vue";
 import IntroSection from "./components/IntroSection.vue";
@@ -15,6 +17,8 @@ import VideoGuideSection from "./components/VideoGuideSection.vue";
     <HowCanHelpSection />
     <VideoGuideSection />
     <ClientsFeedbackSection />
+    <ContactSection />
+    <FooterSection />
   </main>
 </template>
 
