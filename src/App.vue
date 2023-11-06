@@ -18,8 +18,8 @@ import VideoGuideSection from "./components/VideoGuideSection.vue";
     <VideoGuideSection />
     <ClientsFeedbackSection />
     <ContactSection />
-    <FooterSection />
   </main>
+  <FooterSection />
 </template>
 
 <style scoped></style>

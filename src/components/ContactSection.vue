@@ -9,10 +9,13 @@ const enteredEmail = ref('');
 
 const submitForm = (e) => {
     e.preventDefault();
-    alert(`The entered email address ${enteredEmail.value} has been sent!`);
-    enteredEmail.value = '';
+    if (enteredEmail.value) {
+        alert(`The entered email address ${enteredEmail.value} has been sent!`);
+        enteredEmail.value = '';
+    } else {
+        alert(`Enter email address, please!`);
+    }
 }
-
 </script>
 
 <template>
