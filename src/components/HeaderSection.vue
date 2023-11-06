@@ -1,7 +1,10 @@
 <script setup>
+import BurgerButton from "./BurgerButton.vue";
 import { ref } from "vue"
 
 const navList = ref(['Home', 'What We Do', 'Service', 'Project', 'Blog', 'Contact'])
+const isMobileMenuOpen = ref(false)
+
 </script>
 
 <template>
@@ -11,10 +14,12 @@ const navList = ref(['Home', 'What We Do', 'Service', 'Project', 'Blog', 'Contac
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item" v-for="item in navList" :key="item">
-                        <a>{{ item }}</a>
+                        <a href="#" :alt="item">{{ item }}</a>
                     </li>
                 </ul>
             </nav>
+            <BurgerButton :is-menu-open="isMobileMenuOpen" @toggleburger-button="isMobileMenuOpen = !isMobileMenuOpen" />
+            <p>{{ isMobileMenuOpen }}</p>
         </div>
     </header>
 </template>
@@ -40,6 +45,10 @@ const navList = ref(['Home', 'What We Do', 'Service', 'Project', 'Blog', 'Contac
 .nav {
     font-size: var(--text-s);
     letter-spacing: 0.16px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .nav-list {
