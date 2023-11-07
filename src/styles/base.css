@@ -90,10 +90,18 @@ button {
 .section-title {
   font-size: var(--text-3xl);
   font-weight: 900;
+
+  @media (max-width: 768px) {
+    font-size: var(--text-xl);
+  }
 }
 
 .section-text {
   color: var(--clr-gray);
   line-height: 160%;
   font-size: var(--text-s);
+
+  @media (max-width: 768px) {
+    font-size: var(--text-xs);
+  }
 }
