@@ -65,6 +65,18 @@
         background: #F4F9FF;
         border-top-left-radius: 150px;
     }
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media (max-width: 768px) {
+        &::after {
+            height: 450px;
+        }
+    }
 }
 
 .can-help-info {
@@ -95,6 +107,12 @@
     z-index: -5;
     margin-left: 5px;
     margin-top: 104px;
+
+    @media (max-width: 1024px) {
+        position: absolute;
+        bottom: 0;
+        left: 100%;
+    }
 }
 
 .can-help-cards {
@@ -115,6 +133,10 @@
         border: 8px solid var(--clr-pink);
         border-radius: 100%;
     }
+
+    @media (max-width: 768px) {
+        gap: 10px;
+    }
 }
 
 .card {
@@ -133,12 +155,21 @@
     &:has(.code) {
         transform: translateY(79px);
     }
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
 }
 
 .card-img {
     border-radius: 20px;
     padding: 24px;
     margin-bottom: 31px;
+
+    @media (max-width: 768px) {
+        padding: 14px;
+        margin-bottom: 20px;
+    }
 }
 
 .box-search {
@@ -162,6 +193,11 @@
     font-size: var(--text-xl);
     font-weight: 600;
     margin-bottom: 27px;
+
+    @media (max-width: 768px) {
+        font-size: var(--text-m);
+        margin-bottom: 17px;
+    }
 }
 
 .card-text {
@@ -169,5 +205,9 @@
     text-align: center;
     font-size: var(--text-s);
     line-height: 140%;
+
+    @media (max-width: 768px) {
+        font-size: var(--text-xs);
+    }
 }
 </style>
