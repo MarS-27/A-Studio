@@ -15,9 +15,9 @@ import VideoGuideSection from "./components/VideoGuideSection.vue";
     <IntroSection />
     <OurClientsSection />
     <HowCanHelpSection />
-    <!-- <VideoGuideSection />
+    <VideoGuideSection />
     <ClientsFeedbackSection />
-    <ContactSection /> -->
+    <ContactSection />
   </main>
   <!-- <FooterSection /> -->
 </template>

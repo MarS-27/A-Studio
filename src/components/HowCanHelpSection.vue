@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <section class="grid-content can-help">
         <div class="can-help-info">
@@ -73,8 +70,11 @@
     }
 
     @media (max-width: 768px) {
+        margin-top: 64px;
+
         &::after {
             height: 450px;
+            width: 100%;
         }
     }
 }
@@ -137,6 +137,10 @@
     @media (max-width: 768px) {
         gap: 10px;
     }
+
+    @media (max-width: 420px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .card {
@@ -158,6 +162,14 @@
 
     @media (max-width: 768px) {
         padding: 20px;
+    }
+
+    @media (max-width: 420px) {
+
+        &:has(.box-search),
+        &:has(.code) {
+            transform: translateY(0);
+        }
     }
 }
 

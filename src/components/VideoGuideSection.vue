@@ -11,7 +11,6 @@ const togggleVideoPlay = () => {
     if (isVideoPlay.value) {
         video.value.play();
     }
-
 };
 </script>
 
@@ -41,10 +40,22 @@ const togggleVideoPlay = () => {
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        margin-top: 120px;
+        text-align: center;
+    }
+
+    @media (max-width: 420px) {
+        margin-top: 80px;
+    }
 }
 
 .video-guide-content {
     position: relative;
+    min-width: 350px;
     max-width: 550px;
     height: 372px;
     border-radius: 32px;
@@ -68,6 +79,11 @@ const togggleVideoPlay = () => {
         height: 129px;
         border-radius: 100%;
         background-color: var(--clr-orange);
+    }
+
+    @media (max-width: 768px) {
+        min-width: 320px;
+        height: 250px;
     }
 }
 
@@ -94,6 +110,17 @@ const togggleVideoPlay = () => {
         width: 36px;
         height: 40px;
         margin-left: 5px;
+    }
+
+    @media (max-width: 768px) {
+        width: 48px;
+        height: 48px;
+
+        & img {
+            width: 16px;
+            height: 20px;
+            margin-left: 3px;
+        }
     }
 }
 

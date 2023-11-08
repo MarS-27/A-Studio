@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <section class="grid-content clients">
         <div class="clients-info">

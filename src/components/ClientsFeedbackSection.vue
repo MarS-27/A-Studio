@@ -46,7 +46,7 @@ const changeActiveFeedback = (commentId) => {
         <h3 class="section-title">What our happy client say</h3>
         <p class="section-text">Several selected clients, who already believe in our service.</p>
         <div class="feedback-inner">
-            <div class="feedback-list">
+            <div>
                 <template v-for="clientFeedback in clientsFeedbackList" :key="clientFeedback.id">
                     <div class="feedback-item" v-if="clientFeedback.id === activeComment">
                         <img :src="clientFeedback.photo" :alt="clientFeedback.clientName">
@@ -90,6 +90,14 @@ const changeActiveFeedback = (commentId) => {
         text-align: center;
         margin-bottom: 113px;
     }
+
+    @media (max-width: 768px) {
+        margin-top: 80px;
+
+        & .section-text {
+            margin-bottom: 50px;
+        }
+    }
 }
 
 .feedback-inner {
@@ -98,8 +106,6 @@ const changeActiveFeedback = (commentId) => {
     gap: 10px;
 }
 
-.feedback-list {}
-
 .feedback-item {
     display: flex;
     gap: 67px;
@@ -107,6 +113,7 @@ const changeActiveFeedback = (commentId) => {
 
     & img {
         width: 389px;
+        min-width: 310px;
         height: 389px;
         object-fit: cover;
         box-shadow: 10px 20px 50px 0px rgba(0, 0, 0, 0.15);
@@ -143,13 +150,58 @@ const changeActiveFeedback = (commentId) => {
         max-width: 412px;
         margin-top: 84px;
     }
+
+
+    @media (max-width: 1200px) {
+        gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+        &::before {
+            left: 30px;
+        }
+
+        &::after {
+            bottom: -12px;
+        }
+
+        & img {
+            width: 240px;
+            min-width: 200px;
+            height: 240px;
+        }
+
+        &>div {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        &::after {
+            bottom: 62px;
+            width: 60px;
+            height: 60px;
+            border-width: 4px;
+        }
+
+        & img {
+            width: 100px;
+            min-width: 80px;
+            height: 100px;
+        }
+    }
 }
 
 .feedback-client-name {
-    margin-bottom: 21px;
     font-size: var(--text-xl);
     font-weight: 600;
     margin-bottom: 27px;
+
+    @media (max-width: 768px) {
+        font-size: var(--text-m);
+        margin-bottom: 15px;
+    }
 }
 
 .feedback-text {
@@ -157,6 +209,10 @@ const changeActiveFeedback = (commentId) => {
     font-size: var(--text-s);
     line-height: 160%;
     margin-bottom: 40px;
+
+    @media (max-width: 768px) {
+        font-size: var(--text-xs);
+    }
 }
 
 .feedback-buttons {
@@ -209,6 +265,25 @@ const changeActiveFeedback = (commentId) => {
         left: 21px;
         z-index: -1;
     }
+
+    @media (max-width: 1200px) {
+        scale: 0.8;
+    }
+
+    @media (max-width: 1024px) {
+        scale: 0.7;
+    }
+
+    @media (max-width: 920px) {
+        position: absolute;
+        scale: 0.4;
+        top: 120px;
+        right: -60px;
+    }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .photo_1 {
@@ -256,7 +331,7 @@ const changeActiveFeedback = (commentId) => {
 
 .photo_5 {
     top: 150px;
-    right: -64px;
+    right: -44px;
 }
 
 .photo_6 {
