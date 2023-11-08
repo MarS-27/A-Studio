@@ -8,31 +8,31 @@ const clientsFeedbackList = ref([
         id: 1,
         clientName: "Matthew Paul",
         feedback: "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-        photo: "/src/assets/images/matthew_paul.jpeg"
+        photo: "matthew_paul.jpeg"
     },
     {
         id: 2,
         clientName: "Sara Stein",
         feedback: "Thank you for the amazing design and work. I recommend this team.",
-        photo: "/src/assets/images/sara_stein.jpeg"
+        photo: "sara_stein.jpeg"
     },
     {
         id: 3,
         clientName: "John White",
         feedback: "Outstanding! I'm thrilled with the fantastic design and the promptness of the service. The quality of work is exceptional, and I recommend them.",
-        photo: "/src/assets/images/john_white.jpeg"
+        photo: "john_white.jpeg"
     },
     {
         id: 4,
         clientName: "Emma Dunn",
         feedback: "I'm absolutely delighted with the superb design and the efficiency of the work. The speed and quality are remarkable. I highly endorse this service.",
-        photo: "/src/assets/images/emma_dunn.jpeg"
+        photo: "emma_dunn.jpeg"
     },
     {
         id: 5,
         clientName: "Erica Best",
         feedback: "Wow, I couldn't be happier! The design is top-notch, and the quick turnaround is impressive. I'm so impressed with the level of quality and highly recommend their services.",
-        photo: "/src/assets/images/erica_best.jpeg"
+        photo: "erica_best.jpeg"
     },
 ])
 
@@ -49,7 +49,7 @@ const changeActiveFeedback = (commentId) => {
             <div>
                 <template v-for="clientFeedback in clientsFeedbackList" :key="clientFeedback.id">
                     <div class="feedback-item" v-if="clientFeedback.id === activeComment">
-                        <img :src="clientFeedback.photo" :alt="clientFeedback.clientName">
+                        <img :src="`/src/assets/images/${clientFeedback.photo}`" :alt="clientFeedback.clientName">
                         <div>
                             <p class="feedback-client-name">{{ clientFeedback.clientName }}</p>
                             <p class="feedback-text">{{ clientFeedback.feedback }}</p>
