@@ -75,10 +75,29 @@ const submitForm = (e) => {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
+    @media (max-width: 860px) {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+        padding-top: 40px;
+        background-position: bottom 40px right 50%;
+        background-size: 280px 160px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+        &::after {
+            top: -36px;
+        }
+    }
 }
 
 .contact-info {
-
     & .section-title {
         margin-bottom: 17px;
     }
@@ -90,8 +109,15 @@ const submitForm = (e) => {
 
     & div {
         position: absolute;
-        top: 10px;
+        top: 50%;
+        translate: 0 -50%;
         right: 10px;
+    }
+
+    @media (max-width: 768px) {
+        & div {
+            right: 5px;
+        }
     }
 }
 
@@ -109,6 +135,22 @@ const submitForm = (e) => {
     &::placeholder {
         color: #959595;
         font-size: var(--text-s);
+    }
+
+    @media (max-width: 860px) {
+        width: 440px;
+        padding-left: 20px;
+    }
+
+    @media (max-width: 768px) {
+        width: 300px;
+        height: 50px;
+        padding: 5px 150px 5px 10px;
+        font-size: var(--text-s);
+
+        &::placeholder {
+            font-size: var(--text-xs);
+        }
     }
 }
 </style>

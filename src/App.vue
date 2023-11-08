@@ -19,7 +19,7 @@ import VideoGuideSection from "./components/VideoGuideSection.vue";
     <ClientsFeedbackSection />
     <ContactSection />
   </main>
-  <!-- <FooterSection /> -->
+  <FooterSection />
 </template>
 
 <style scoped></style>

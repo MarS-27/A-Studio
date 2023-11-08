@@ -92,11 +92,15 @@ const changeActiveFeedback = (commentId) => {
     }
 
     @media (max-width: 768px) {
-        margin-top: 80px;
+        margin-top: 100px;
 
         & .section-text {
             margin-bottom: 50px;
         }
+    }
+
+    @media (max-width: 420px) {
+        margin-top: 80px;
     }
 }
 
@@ -179,7 +183,8 @@ const changeActiveFeedback = (commentId) => {
     @media (max-width: 500px) {
 
         &::after {
-            bottom: 62px;
+            bottom: 0;
+            top: 60px;
             width: 60px;
             height: 60px;
             border-width: 4px;

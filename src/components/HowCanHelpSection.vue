@@ -1,7 +1,7 @@
 <template>
     <section class="grid-content can-help">
         <div class="can-help-info">
-            <h3 class="section-title">How can we help your Business ?</h3>
+            <h3 class="section-title">How can we help your Business?</h3>
             <p class="section-text">We build readymade websites, mobile applications, and elaborate online business
                 services.
             </p>
