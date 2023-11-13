@@ -17,10 +17,10 @@ const togggleVideoPlay = () => {
 <template>
     <section class="grid-content video-guide">
         <div class="video-guide-content">
-            <video ref="video" src="../assets/video/DigitalAgency.mp4" @pause="togggleVideoPlay"
-                poster="/src/assets/images/video-preload-img.png" :controls="isVideoPlay"></video>
+            <video ref="video" src="/assets/video/DigitalAgency.mp4" @pause="togggleVideoPlay"
+                poster="/assets/images/video-preload-img.png" :controls="isVideoPlay"></video>
             <button type="button" class="video-play-button" @click="togggleVideoPlay" v-if="!isVideoPlay">
-                <img src="/src/assets/icons/play-icon.svg" alt="play">
+                <img src="/assets/icons/play-icon.svg" alt="play">
             </button>
         </div>
         <div class="video-guide-info">

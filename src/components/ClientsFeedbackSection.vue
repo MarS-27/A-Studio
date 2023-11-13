@@ -49,7 +49,7 @@ const changeActiveFeedback = (commentId) => {
             <div>
                 <template v-for="clientFeedback in clientsFeedbackList" :key="clientFeedback.id">
                     <div class="feedback-item" v-if="clientFeedback.id === activeComment">
-                        <img :src="`/src/assets/images/${clientFeedback.photo}`" :alt="clientFeedback.clientName">
+                        <img :src="`/assets/images/${clientFeedback.photo}`" :alt="clientFeedback.clientName">
                         <div>
                             <p class="feedback-client-name">{{ clientFeedback.clientName }}</p>
                             <p class="feedback-text">{{ clientFeedback.feedback }}</p>
@@ -64,14 +64,14 @@ const changeActiveFeedback = (commentId) => {
                 </template>
             </div>
             <div class="cliens-photos-circle">
-                <img class="photo_1" src="/src/assets/images/sara_stein.jpeg" alt="Sara Stein">
-                <img class="photo_2" src="/src/assets/images/emma_dunn.jpeg" alt="Emma Dunn">
-                <img class="photo_3" src="/src/assets/images/erica_best.jpeg" alt="Erica Best">
-                <img class="photo_4" src="/src/assets/images/elly_sun.jpeg" alt="Elly Sun">
-                <img class="photo_5" src="/src/assets/images/phil_sommers.jpeg" alt="Phil Sommers">
-                <img class="photo_6" src="/src/assets/images/sabrina_himenez.jpeg" alt="Sabrina Himenez">
-                <img class="photo_7" src="/src/assets/images/john_white.jpeg" alt="John White">
-                <img class="photo_8" src="/src/assets/images/sam_spring.jpeg" alt="Sam Spring">
+                <img class="photo_1" src="/assets/images/sara_stein.jpeg" alt="Sara Stein">
+                <img class="photo_2" src="/assets/images/emma_dunn.jpeg" alt="Emma Dunn">
+                <img class="photo_3" src="/assets/images/erica_best.jpeg" alt="Erica Best">
+                <img class="photo_4" src="/assets/images/elly_sun.jpeg" alt="Elly Sun">
+                <img class="photo_5" src="/assets/images/phil_sommers.jpeg" alt="Phil Sommers">
+                <img class="photo_6" src="/assets/images/sabrina_himenez.jpeg" alt="Sabrina Himenez">
+                <img class="photo_7" src="/assets/images/john_white.jpeg" alt="John White">
+                <img class="photo_8" src="/assets/images/sam_spring.jpeg" alt="Sam Spring">
             </div>
         </div>
     </section>
@@ -144,7 +144,7 @@ const changeActiveFeedback = (commentId) => {
         top: -42px;
         left: 230px;
         z-index: -5;
-        background-image: url('/src/assets/images/Dot.svg');
+        background-image: url('/assets/images/Dot.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

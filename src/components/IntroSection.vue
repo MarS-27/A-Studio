@@ -15,12 +15,12 @@ const btnVariant = ref("medium");
             </p>
             <MainButton :variant="btnVariant" />
             <div class="intro-dots">
-                <img src="/src/assets/images/Dot.svg" alt="dots">
-                <img src="/src/assets/images/Dot.svg" alt="dots">
+                <img src="/assets/images/Dot.svg" alt="dots">
+                <img src="/assets/images/Dot.svg" alt="dots">
             </div>
         </div>
         <div class="intro-img">
-            <img src="/src/assets/images/intro.png" alt="intro-img">
+            <img src="/assets/images/intro.png" alt="intro-img">
         </div>
     </section>
 </template>

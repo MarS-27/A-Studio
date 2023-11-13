@@ -43,13 +43,13 @@ const footerLinks = ref([
         </div>
         <div class="grid-content social-links">
             <a href="https://www.facebook.com" target="_blank">
-                <img src="/src/assets/icons/facebook.svg" alt="facebook">
+                <img src="/assets/icons/facebook.svg" alt="facebook">
             </a>
             <a href="https://twitter.com" target="_blank">
-                <img src="/src/assets/icons/twitter.svg" alt="twitter">
+                <img src="/assets/icons/twitter.svg" alt="twitter">
             </a>
             <a href="https://www.linkedin.com" target="_blank">
-                <img src="/src/assets/icons/linkedin.svg" alt="linkedin">
+                <img src="/assets/icons/linkedin.svg" alt="linkedin">
             </a>
         </div>
         <p class="grid-content copyright">

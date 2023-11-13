@@ -44,7 +44,7 @@ const submitForm = (e) => {
     margin-bottom: 146px;
     border-radius: 75px;
     background-color: #F4F9FF;
-    background-image: url("/src/assets/images/contact-rectangle.svg");
+    background-image: url("/assets/images/contact-rectangle.svg");
     background-position: right;
     background-repeat: no-repeat;
     padding: 98px 98px 99px 92px;
@@ -70,7 +70,7 @@ const submitForm = (e) => {
         top: -56px;
         right: -37px;
         z-index: -1;
-        background-image: url('/src/assets/images/Dot.svg');
+        background-image: url('/assets/images/Dot.svg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
